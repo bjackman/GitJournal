@@ -4,16 +4,10 @@
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
-import 'package:flutter/foundation.dart' as foundation;
 import 'package:gitjournal/l10n.dart';
-import 'package:universal_io/io.dart' show Platform;
 
 class Features {
-  // Make the desktop version always pro, for now.
-  static bool alwaysPro = foundation.kDebugMode ||
-      Platform.isWindows ||
-      Platform.isLinux ||
-      Platform.isMacOS;
+  static bool alwaysPro = true; // For bjackman's fork.
 
   static const fancyOrgEditor = false;
 
